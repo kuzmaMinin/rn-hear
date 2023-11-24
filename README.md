@@ -11,4 +11,5 @@
 ### Стек
 - React Native
 - Redux
+- Native-Base (UI)
 Приложение кроссплатформенное (Android и IOS).
