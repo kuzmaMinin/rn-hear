@@ -11,5 +11,6 @@
 ### Стек
 - React Native (Typescript)
 - Redux Toolkit
+- React-Navigation
 - Native-Base (UI)
 Приложение кроссплатформенное (Android и IOS).
