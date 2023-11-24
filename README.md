@@ -9,7 +9,7 @@
 На данный момент сервер не активен.
 
 ### Стек
-- React Native
+- React Native (Typescript)
 - Redux Toolkit
 - Native-Base (UI)
 Приложение кроссплатформенное (Android и IOS).
