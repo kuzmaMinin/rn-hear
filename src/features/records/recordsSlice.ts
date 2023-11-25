@@ -2,6 +2,7 @@ import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 
 import { EPreconditions, IRecord, PartialRecord } from '../../types/types';
+import { BASE_URL } from "../../utils/constants";
 
 export interface RecordsState {
   useCase?: boolean;
@@ -30,7 +31,7 @@ export const fetchRecords = createAsyncThunk(
   async () => {
     const response = await axios
       .get<{ data: IRecord[] }>(
-        'https://voices.corepartners.com/records/GetListById?id=1&take=100&skip=0',
+        `https://${BASE_URL}/records/GetListById?id=1&take=100&skip=0`,
       )
       .then(result => result.data.data)
       .catch(error => {
@@ -44,7 +45,7 @@ export const sendChunks = createAsyncThunk(
   'records/sendChunks',
   async (data: { chunksArray: string[]; newRecord: PartialRecord }) => {
     const response = await axios
-      .post('https://voices.corepartners.com/records/', JSON.stringify(data), {
+      .post(`https://${BASE_URL}/records/`, JSON.stringify(data), {
         headers: {
           'Content-Type': 'application/json',
         },

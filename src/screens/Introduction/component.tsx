@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BackHandler } from 'react-native';
+import { BackHandler, Platform } from 'react-native';
 import { useDispatch } from 'react-redux';
 import notifee, { AuthorizationStatus } from '@notifee/react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -34,7 +34,7 @@ export default function Introduction({ navigation }: IntroductionProps) {
 
     if (
       notificationPermission.authorizationStatus >=
-      AuthorizationStatus.AUTHORIZED
+      AuthorizationStatus.AUTHORIZED || Platform.OS === 'android'
     ) {
       dispatch(setIsNotificationPermissionsGranted(true));
     }

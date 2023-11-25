@@ -36,7 +36,7 @@ export default function Consent({ navigation }: LoginProps) {
   }
 
   return (
-    <KeyboardAvoidingView>
+    <KeyboardAvoidingView style={{ flex: 1 }}>
       <Flex flex={1} bg={'#fff'} p={5} pt={0}>
         <View>
           <Title title="What Did I Hear Consent Form" paddingX={5} />

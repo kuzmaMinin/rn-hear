@@ -14,3 +14,11 @@
 - React-Navigation
 - Native-Base (UI)
 Приложение кроссплатформенное (Android и IOS).
+
+<img width="100px" src="./assets/screenShots/1.png" alt="screenShot1"/>
+<img width="100px" src="./assets/screenShots/2.png" alt="screenShot2"/>
+<img width="100px" src="./assets/screenShots/3.png" alt="screenShot3"/>
+<img width="100px" src="./assets/screenShots/4.png" alt="screenShot4"/>
+<img width="100px" src="./assets/screenShots/5.png" alt="screenShot5"/>
+<img width="100px" src="./assets/screenShots/6.png" alt="screenShot6"/>
+<img width="100px" src="./assets/screenShots/7.png" alt="screenShot7"/>
