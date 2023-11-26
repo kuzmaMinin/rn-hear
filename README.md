@@ -13,6 +13,7 @@
 - Redux Toolkit
 - React-Navigation
 - Native-Base (UI)
+  
 Приложение кроссплатформенное (Android и IOS).
 
 <img width="100px" src="./assets/screenShots/1.png" alt="screenShot1"/>
